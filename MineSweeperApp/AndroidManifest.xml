@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs1.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+<!-- Uncomment the following section if you need to use camera to take picture. 
+If you want to take picture using System's Camera application, your phone or emulator needs to have SD card. -->
+
+<!-- 
+	<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+	<uses-feature android:name="android.hardware.camera"               android:required="true" />      
+   	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+   	<uses-permission android:name="android.permission.CAMERA" />
+-->	
+
+<!-- Uncomment the following section if you your application needs to use Bluetooth -->
+
+<!--     <uses-permission android:name="android.permission.BLUETOOTH"/> 
+         <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> 
+-->
+
+
+
+    <application
+        android:allowBackup="false"
+        android:label="MineSweeperApp" >
+	<!-- change "portrait" to "landscape" if desired -->        
+	<activity
+	    android:screenOrientation="portrait"
+            android:name=".MineSweeperApp" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<!-- Uncomment the following section if you device supports Bluetooth but you still want to emulate Bluetooth --> 
+
+<!--  
+	<meta-data android:value="emulated" android:name="emulation"></meta-data>  
+-->
+
+    </application>
+
+</manifest>
